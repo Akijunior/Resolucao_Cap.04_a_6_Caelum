@@ -11,31 +11,32 @@ public class TestaFuncionario {
 		Funcionario funcionario2 = new Funcionario();
 		
 		funcionario1.nome_Funcionario = "Arroz";
-		funcionario1.salario = 2500;
+		funcionario1.setSalario(2500);
 		funcionario1.aumento_Salario(500);
 		Data data = new Data();
 		data.dia = 25;
 		data.mes = 03;
 		data.ano = 2017;
-		funcionario1.data_de_entrada = data;
+		funcionario1.setData_de_entrada(data);
 		
 		//Questão 04
 		
 		funcionario2.nome_Funcionario = "Arroz";
-		funcionario2.salario = 2500;
+		funcionario2.setSalario(2500);
 		funcionario2.aumento_Salario(500);
 		
 		if(funcionario1 == funcionario2) {
 			
-			System.out.println("São iguais!");
+			System.out.println("\nSão iguais!\n");
 		}
 		
 		else {
 			
-			System.out.println("São diferentes!");
+			System.out.println("\nSão diferentes!\n");
 		}
 		
 		funcionario1.mostra();
+		funcionario2.mostra();
 		
 		//Questão 05
 		
@@ -43,12 +44,12 @@ public class TestaFuncionario {
 		
 if (funcionario1 == funcionario3) {
 			
-			System.out.println("São iguais!");
+			System.out.println("\nSão iguais!\n");
 		}
 		
 		else {
 			
-			System.out.println("São diferentes!");
+			System.out.println("\nSão diferentes!\n");
 		}
 		//Passam a apontar para o mesmo local.
 		
