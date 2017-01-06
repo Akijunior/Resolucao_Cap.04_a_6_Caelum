@@ -26,13 +26,14 @@ public class Funcionario {
 		return ganhoAnual;
 	}
 	
-	public void mostra() {
+	public Object[] mostra() {
 		
 		System.out.printf("Nome do Funcionário: %s.\n", this.nome_Funcionario);
 		System.out.printf("Departamento: %s. \n", this.departamento);
 		System.out.printf("Ganho Mensal: %s.\n", this.salario);
 		System.out.printf("Data de entrada: %d/%d/%d.\n", this.data_de_entrada.dia, this.data_de_entrada.mes, this.data_de_entrada.ano);
 		System.out.printf("RG: %s.", this.RG);
+		return null;
 	}
 	
 
